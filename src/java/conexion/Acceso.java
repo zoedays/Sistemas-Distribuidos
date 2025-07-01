@@ -17,12 +17,15 @@ public class Acceso {
             cn = DriverManager.getConnection(url, user, password);
 
             System.out.println("Conexión exitosa");
-        } catch (ClassNotFoundException e) {
-            cn = null;
+       } catch (ClassNotFoundException e) {
+            System.err.println("Driver JDBC no encontrado: " + e.getMessage());
         } catch (SQLException e) {
-            cn = null;
+            System.err.println("Error SQL al conectar: " + e.getMessage());
+        } catch (Exception e) {
+            System.err.println("Error general: " + e.getMessage());
         }
         return cn;
+    }
     }
 
     public static String ejecutar(String sql) {
