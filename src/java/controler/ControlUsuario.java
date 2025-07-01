@@ -41,6 +41,13 @@ public class ControlUsuario extends HttpServlet {
             case "Nuevo":
                 response.sendRedirect(request.getContextPath() + "/GestionUsuarios/registrarUsuario.jsp");
                 break;
+            case "CerrarSesion":
+                HttpSession session = request.getSession(false);
+                if (session != null) {    
+                    session.invalidate();
+                }
+                response.sendRedirect("login.jsp");
+                break;
         }
     }
 
