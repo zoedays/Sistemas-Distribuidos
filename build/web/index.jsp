@@ -9,7 +9,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Supermercado - Menú Principal</title>
+    <title>RYNPSAC - Menú Principal</title>
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -133,11 +133,12 @@
         <div class="hero-icon">
             <i class="bi bi-shop-window"></i>
         </div>
-        <h1>Bienvenido a SuperMarket+</h1>
-        <p>Tu tienda en línea de confianza — fácil, rápida y siempre disponible</p>
+        <h1>Bienvenido a RYNPSAC</h1>
+        <p>...</p>
     </header>
 
     <!-- JS Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
