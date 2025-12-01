@@ -8,17 +8,21 @@ public class Acceso {
 
     public static Connection getConexion() {
     Connection cn = null;
-    try {
-        String url = "jdbc:mysql://buarfnvcold45c8vatsq-mysql.services.clever-cloud.com:3306/buarfnvcold45c8vatsq?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC";
-        String user = "unxm4pumtkyd1f5l";
-        String password = "BE1bLWhFcaZ3eL0A7Dxa";
+        try {
+            String url = "jdbc:mysql://bhdvpkp5ipt7tlpmznry-mysql.services.clever-cloud.com:3306/bhdvpkp5ipt7tlpmznry?useSSL=true&requireSSL=true";
+            String user = "utytcahyubdxki60";
+            String password = "FiQ7QiHxHDqywNL14LlB";
 
-        Class.forName("com.mysql.cj.jdbc.Driver");
-        cn = DriverManager.getConnection(url, user, password);
-        System.out.println("CONEXION OK");
-    } catch (Exception e) {
-        e.printStackTrace();
-    }
+            Class.forName("com.mysql.cj.jdbc.Driver");
+            cn = DriverManager.getConnection(url, user, password);
+            System.out.println("Conexión exitosa");
+       } catch (ClassNotFoundException e) {
+            System.err.println("Driver JDBC no encontrado: " + e.getMessage());
+        } catch (SQLException e) {
+            System.err.println("Error SQL al conectar: " + e.getMessage());
+        } catch (Exception e) {
+            System.err.println("Error general: " + e.getMessage());
+        }
     return cn;
 }
 
@@ -104,4 +108,5 @@ public class Acceso {
     }
 
 }
+
 
